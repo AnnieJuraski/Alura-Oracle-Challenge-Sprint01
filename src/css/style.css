@@ -9,7 +9,8 @@
     --mainColor: var(--blue);
     --textColor: #050505;
     --bgText: #ebebeb;
-    --bgMSG: #cecece;  
+    --bgMSG: #cecece;
+    --bgSwitcher: #f4f4ff;  
 }
 
 .dark-theme{
@@ -18,6 +19,7 @@
     --textColor: #f0f0f0;
     --bgMSG: #0e0e0e; 
     --bgText: #080808;
+    --bgSwitcher: #060606;
 }
 
 
@@ -32,28 +34,99 @@ html{
 }
 
 body{
+    --mainColor: var(--blue);
     height: 100vh;
-    background: rgb(6, 6, 6);
     background: linear-gradient(180deg, var(--lightColorRadialBG) 0%, var(--darkerColorRadialBG) 100%);      
 }
 
 main{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 }
 
-header{
-    margin-bottom: 60px;
-    /* border: 5px solid chocolate; */
+
+ /* ********* Header ********** */
+
+ header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;    
+    height: 100px;
+    border: 3px solid lightgreen;         
 }
 
 .logoAlura{
-    margin-left: 80px;
-    margin-top: 10px;
+    margin-left: 80px;   
+    z-index: 2;
 }
 
 
+ /* ********* Theme Switcher ********** */
+
+
+ .theme-switcher{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    width: 500px;
+    background-color: var(--bgSwitcher);
+    padding: 15px;
+    border: 2px solid var(--textColor);
+    border-right: none;
+    border-radius: 30px 0 0 30px;
+    z-index: 10;
+    overflow: hidden;
+ }
+
+#switcher-btn{
+    /* position: absolute;
+    top: 0;
+    left: -75px;
+    padding: 10px 20px; */
+    color: var(--textColor);
+    width: 5rem;
+    height: 5rem;
+    animation: rotate 4s linear infinite;
+    cursor: pointer;    
+}
+
+.theme-switcher:before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 65px;
+    border-right: 2px solid var(--textColor);
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.theme-btn-container{
+    display: flex;
+    gap: 20px;
+}
+
+.color-btn{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    cursor: pointer;
+}
+
+
+
+
+ /* ********* Main ********** */
 
 .title{
     font-size: 5rem;    
@@ -73,22 +146,21 @@ header{
 }
 
 
+
+
+ /* ********* Text input ********** */
+
+
 .txt-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
     gap: 100px;
-    position: relative;    
-}
+    position: relative;    }
 
 
-.msg-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 100px;
-}
+
 
 .text-area{
     border: 3px solid var(--mainColor);    
@@ -105,11 +177,31 @@ header{
 
 .info{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
     bottom: 130px;
     left: 10px;
     font-size: 2.2rem;
     color: var(--textColor);
     font-weight: 900;
+}
+
+#warning{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exclamation{
+    margin-right: 0px;    
+    text-align: center;
+    color: #f60023;    
+    margin-right: 10px;
+    width: 2.5rem;
+    height: 2.5rem;    
+    border-radius: 50%;
+       
 }
 
 .text-area:focus{
@@ -119,6 +211,17 @@ header{
 ::placeholder{
     color: rgba(127,127,127, 0.5);
 }
+
+
+ /* ********* Text output ********** */
+
+
+ .msg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
+} 
 
 
 .msg{
@@ -137,12 +240,14 @@ header{
 }
 
 
+ /* ********* Buttons ********** */  
+
+
 
 .btn-container{
     display: flex;
     gap: 50px;
 }
-
 
 
 button{    
@@ -154,13 +259,20 @@ button{
     width: 240px;
     border: none;
     cursor: pointer; 
-    transition: all 0.3s ease-in-out;     
+    transition: transform 0.1s ease-in-out, box-shadow 0.5s ease-in-out;     
 }
 
 
 button:hover{    
-    box-shadow: 0px 0px 10px 5px var(--mainColor);      
+    box-shadow: 0px 0px 20px 10px var(--mainColor),
+                0px 0px 2px 3px white;      
 }
+
+button:active{    
+    transform: scale(0.9);   
+}
+
+
 
 .btn-encoder{
     background-color: var(--mainColor);    
@@ -168,9 +280,11 @@ button:hover{
 }
 
 .btn-encoder:hover{
-    box-shadow: 0px 0px 10px 5px white;   
+    box-shadow: 0px 0px 0px 1px white,
+                0px 0px 20px 5px var(--mainColor);
+                 
+    
 }
-
 
 
 .btn-decoder{

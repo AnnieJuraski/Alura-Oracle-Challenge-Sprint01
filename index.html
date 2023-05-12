@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Annie Alves">
 
+    
+
     <title>Decodificador de texto</title>
 
-    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
@@ -20,6 +24,27 @@
 <body class="dark-theme" >
     <header class="header">
         <img src="./src/img/logo-alura.svg" class="logoAlura" alt="Logo da Alura">
+
+        <div class="theme-switcher">
+
+            <svg id="switcher-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M24 13.616v-3.232l-2.869-1.02c-.198-.687-.472-1.342-.811-1.955l1.308-2.751-2.285-2.285-2.751 1.307c-.613-.339-1.269-.613-1.955-.811l-1.021-2.869h-3.232l-1.021 2.869c-.686.198-1.342.471-1.955.811l-2.751-1.308-2.285 2.285 1.308 2.752c-.339.613-.614 1.268-.811 1.955l-2.869 1.02v3.232l2.869 1.02c.197.687.472 1.342.811 1.955l-1.308 2.751 2.285 2.286 2.751-1.308c.613.339 1.269.613 1.955.811l1.021 2.869h3.232l1.021-2.869c.687-.198 1.342-.472 1.955-.811l2.751 1.308 2.285-2.286-1.308-2.751c.339-.613.613-1.268.811-1.955l2.869-1.02zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/></svg>
+            
+
+            <div class="theme-btn-container">
+                
+                <span class="color-btn" id="blue-btn" data-color"#4754ff" style="background: #4754ff;"></span>
+
+                <span class="color-btn" id="green-btn" data-color"#09c256" style="background: #09c256;"></span>
+                <span class="color-btn" id="red-btn" data-color"#ec0d2c" style="background: #ec0d2c;"></span>                
+                <span class="color-btn" id="yellow-btn" data-color"#b9a600" style="background: #b9a600;"></span>
+                <span class="color-btn" id="purple-btn" data-color"#750aa3" style="background: #750aa3;"></span>
+                
+            </div>
+           
+
+        </div>
+        
+        <!-- <button id="toggle"> Toggle</button> -->
     </header>
 
 
@@ -33,7 +58,11 @@
     
     
                 <div class="info">
-                    <h6> Não insira números</h6>
+                    <svg id="exclamation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.351 6.493c-.08-.801.55-1.493 1.351-1.493s1.431.692 1.351 1.493l-.801 8.01c-.029.282-.266.497-.55.497s-.521-.215-.55-.498l-.801-8.009zm1.351 12.757c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25 1.25.56 1.25 1.25-.56 1.25-1.25 1.25z"/></svg>
+                    </svg>
+                    
+                    <p id="warning">Não insira números</p>
                 </div>
     
     
@@ -50,6 +79,8 @@
             </div>
         </div>
     </main>
+    
+    <script src="./src/js/script.js"></script>
 
 </body>
 
