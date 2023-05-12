@@ -1,0 +1,181 @@
+:root{    
+    --blue: #4754ff;
+    --green: #09c256;
+    --red: #ec0d2c;
+    --yellow: #b9a600;
+    --purple: #750aa3;
+    --lightColorRadialBG: #ebebeb;
+    --darkerColorRadialBG: #b3b3b3; 
+    --mainColor: var(--blue);
+    --textColor: #050505;
+    --bgText: #ebebeb;
+    --bgMSG: #cecece;  
+}
+
+.dark-theme{
+    --lightColorRadialBG: #1a1a1a;
+    --darkerColorRadialBG: #030303;
+    --textColor: #f0f0f0;
+    --bgMSG: #0e0e0e; 
+    --bgText: #080808;
+}
+
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 150%;
+    font-weight: 400;
+      
+}
+html{
+    font-size: 62.5%;    
+}
+
+body{
+    height: 100vh;
+    background: rgb(6, 6, 6);
+    background: linear-gradient(180deg, var(--lightColorRadialBG) 0%, var(--darkerColorRadialBG) 100%);      
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    margin-bottom: 60px;
+    /* border: 5px solid chocolate; */
+}
+
+.logoAlura{
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+
+
+.title{
+    font-size: 5rem;    
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--textColor);
+    font-weight: 700;
+}
+
+
+.content{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 40PX;
+    margin-left: 80px;
+    gap: 400px;
+}
+
+
+.txt-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 80px;
+    position: relative;    
+}
+
+
+.msg-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.text-area{
+    border: 3px solid var(--mainColor);    
+    border-radius: 50px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: var(--bgText);
+    height: 700px;
+    width: 1000px;
+    font-size: 2rem;
+    color: var(--mainColor);
+    resize: none;    
+}
+
+.info{
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+    font-size: 2.5rem;
+}
+
+.text-area:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: rgba(127,127,127, 0.5);
+}
+
+
+.msg{
+    background: var(--bgMSG);
+    border-radius: 30px;    
+    border: 3px solid var(--textColor);
+    box-sizing: border-box;
+    height: 700px;
+    width: 1000px;
+    padding: 20px;
+    resize: none;  
+    background-image: url(/src/img/encrypt_lock.png); 
+    background-repeat: no-repeat;
+    background-position: center;   
+    background-size: 50%;    
+}
+
+
+
+.btn-container{
+    display: flex;
+    gap: 50px;
+}
+
+
+
+button{    
+    padding: 20px;
+    border-radius: 25px;    
+    font-size: 2rem;
+    color: var(--mainColor);
+    height: 80px;
+    width: 240px;
+    border: none;
+    cursor: pointer; 
+    transition: all 0.3s ease-in-out;     
+}
+
+
+button:hover{    
+    box-shadow: 0px 0px 10px 5px var(--mainColor);
+    text-shadow: 0px 0px 10px var(--mainColor); 
+    border-radius: 50px;
+    width: 280px;    
+}
+
+.btn-encoder{
+    background-color: var(--mainColor);    
+    color: #f9f9f9;    
+}
+
+.btn-encoder:hover{
+    box-shadow: 0px 0px 10px 5px white;
+    text-shadow: 0px 0px 10px white;
+}
+
+
+
+.btn-decoder{
+    background-color: transparent;    
+    border: 4px solid var(--mainColor);    
+}

@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Annie Alves">
+
+    <title>Decodificador de texto</title>
+
+    <<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Roboto:wght@400;500&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body>
+
+<body  >
+    <header class="header">
+        <img src="./src/img/logo-alura.svg" class="logoAlura" alt="Logo da Alura">
+    </header>
+
+
+    <main>
+        <h1 class="title">
+            Codificador de texto
+        </h1>
+        <div class="content">
+            <div class="txt-container">
+                <textarea class="text-area" placeholder="Digite sua mensagem..." cols="50" rows="20"></textarea>
     
+    
+                <div class="info">
+                    <h6> Não insira números</h6>
+                </div>
+    
+    
+                <div class="btn-container">
+                    <button class="btn-encoder">Criptografrar</button>
+                    <button class="btn-decoder">Descriptografar</button>
+                </div>
+            </div>
+    
+    
+            <div class="msg-container">
+                <textarea class="msg" cols="20" rows="10"></textarea>
+                <button class="btn-copy">Copiar</button>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
