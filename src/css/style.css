@@ -13,7 +13,7 @@
 }
 
 .dark-theme{
-    --lightColorRadialBG: #1a1a1a;
+    --lightColorRadialBG: #202020;
     --darkerColorRadialBG: #030303;
     --textColor: #f0f0f0;
     --bgMSG: #0e0e0e; 
@@ -105,9 +105,11 @@ header{
 
 .info{
     position: absolute;
-    bottom: 120px;
+    bottom: 130px;
     left: 10px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    color: var(--textColor);
+    font-weight: 900;
 }
 
 .text-area:focus{
