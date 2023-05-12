@@ -1,34 +1,32 @@
 :root{    
-    --blue: #4754ff;
-    --green: #09c256;
-    --red: #ec0d2c;
-    --yellow: #b9a600;
-    --purple: #750aa3;
-    --lightColorRadialBG: #ebebeb;
-    --darkerColorRadialBG: #b3b3b3; 
-    --mainColor: var(--blue);
-    --textColor: #050505;
-    --bgText: #ebebeb;
-    --bgMSG: #cecece;
-    --bgSwitcher: #f4f4ff;  
+    --blue: #0f3397;
+    --green: #006329;
+    --red: #ce001b;    
+    --purple: #5e0983;
+    --colorBGGradient: #030303;  
+    --textColor: #f0f0f0;
+    --bgMSG: #161616;     
 }
 
-.dark-theme{
-    --lightColorRadialBG: #202020;
-    --darkerColorRadialBG: #030303;
-    --textColor: #f0f0f0;
-    --bgMSG: #0e0e0e; 
-    --bgText: #080808;
-    --bgSwitcher: #060606;
+
+
+.light-theme{
+  
+    --textColor: #050505;
+    --colorBGGradient: #b8b8b8;
+    --bgMSG: #cecece;
 }
+
+
 
 
 *{
     font-family: 'Ubuntu', sans-serif;
     line-height: 150%;
-    font-weight: 400;
-      
+    font-weight: 400;   
 }
+
+
 html{
     font-size: 62.5%;    
 }
@@ -36,13 +34,10 @@ html{
 body{
     --mainColor: var(--blue);
     height: 100vh;
-    background: linear-gradient(180deg, var(--lightColorRadialBG) 0%, var(--darkerColorRadialBG) 100%);      
+    background: linear-gradient(45deg,var(--colorBGGradient) 0%, var(--mainColor) 90%); 
+    background-size: 400%;
 }
 
-main{
-    display: flex;
-    flex-direction: column;    
-}
 
 
  /* ********* Header ********** */
@@ -51,13 +46,15 @@ main{
     display: flex;
     align-items: center;
     margin-bottom: 60px;    
-    height: 100px;
-    border: 3px solid lightgreen;         
+    height: 80px;
+    background-color: var(--mainColor);
+    box-shadow: 0 5px 25px black;
+
 }
 
 .logoAlura{
     margin-left: 80px;   
-    z-index: 2;
+    filter: brightness(0) invert(1);
 }
 
 
@@ -82,12 +79,11 @@ main{
     overflow: hidden;
  }
 
-#switcher-btn{
-    /* position: absolute;
-    top: 0;
-    left: -75px;
-    padding: 10px 20px; */
-    color: var(--textColor);
+#theme-opener{
+    position: fixed;
+    right: 30px;
+    top: 10px;
+    color: white;
     width: 5rem;
     height: 5rem;
     animation: rotate 4s linear infinite;
@@ -128,9 +124,17 @@ main{
 
  /* ********* Main ********** */
 
+
+
+ main{
+    display: flex;
+    flex-direction: column;    
+}
+
+
 .title{
-    font-size: 5rem;    
-    margin: 0 auto;
+    font-size: 3.5rem;    
+    margin: 15px auto;
     font-family: 'Ubuntu', sans-serif;
     color: var(--textColor);
     font-weight: 700;
@@ -139,10 +143,9 @@ main{
 
 .content{
     display: flex;
-    margin-top: 120px;
-    margin-bottom: 40PX;
-    margin-left: 80px;
-    gap: 400px;
+    padding: 0 80px;
+    margin-top: 8rem;     
+    justify-content: space-between;
 }
 
 
@@ -152,27 +155,34 @@ main{
 
 
 .txt-container{
+    flex: 1;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
     gap: 100px;
-    position: relative;    }
+    flex-direction: column;
+    max-width: 1000px;
+    width: 1200px;  
+}
 
 
 
 
 .text-area{
-    border: 3px solid var(--mainColor);    
+    border: 3px solid transparent;    
     border-radius: 50px;
     padding: 30px;
     box-sizing: border-box;
-    background-color: var(--bgText);
+    background: transparent;   
     height: 700px;
-    width: 1000px;
+    width: 1200px;   
     font-size: 2rem;
-    color: var(--mainColor);
-    resize: none;    
+    color: var(--textColor);
+    resize: none;   
+}
+
+.text-area:focus {
+    border: 3px solid var(--mainColor);
+    outline: none;
 }
 
 .info{
@@ -180,7 +190,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;    
-    bottom: 130px;
+    bottom: 115px;
     left: 10px;
     font-size: 2.2rem;
     color: var(--textColor);
@@ -193,23 +203,18 @@ main{
     align-items: center;
 }
 
-#exclamation{
+.warning-icon{
     margin-right: 0px;    
     text-align: center;
     color: #f60023;    
     margin-right: 10px;
-    width: 2.5rem;
-    height: 2.5rem;    
-    border-radius: 50%;
-       
+    width: 3rem;
+    height: 3rem;  
 }
 
-.text-area:focus{
-    outline: none;
-}
 
 ::placeholder{
-    color: rgba(127,127,127, 0.5);
+    color: #505050;
 }
 
 
@@ -220,24 +225,33 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 100px;
+    gap: 100px; 
 } 
 
 
 .msg{
-    background: var(--bgMSG);
+    background: rgba(100,100,100, 0.1);
     border-radius: 30px;    
-    border: 3px solid var(--textColor);
+    border: none;
     box-sizing: border-box;
     height: 700px;
-    width: 1000px;
+    width: 40vw;
     padding: 20px;
-    resize: none;  
-    background-image: url(/src/img/encrypt_lock.png); 
+    resize: none;
+    backdrop-filter: blur(20px);
+    font-size: 2rem;
+    color: var(--textColor);
+    background-image: url(/src/img/encrypt_lock3.png);
     background-repeat: no-repeat;
-    background-position: center;   
-    background-size: 50%;    
+    background-position: center;
 }
+
+.msg:focus{
+    outline: none;
+}
+
+
+
 
 
  /* ********* Buttons ********** */  
@@ -259,13 +273,13 @@ button{
     width: 240px;
     border: none;
     cursor: pointer; 
-    transition: transform 0.1s ease-in-out, box-shadow 0.5s ease-in-out;     
+    transition: box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;     
 }
 
 
 button:hover{    
-    box-shadow: 0px 0px 20px 10px var(--mainColor),
-                0px 0px 2px 3px white;      
+    box-shadow: 0px 0px 20px var(--mainColor),
+                0px 0px 2px white;      
 }
 
 button:active{    
@@ -279,12 +293,6 @@ button:active{
     color: #f9f9f9;    
 }
 
-.btn-encoder:hover{
-    box-shadow: 0px 0px 0px 1px white,
-                0px 0px 20px 5px var(--mainColor);
-                 
-    
-}
 
 
 .btn-decoder{
