@@ -78,7 +78,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-content: flex-start;
-    gap: 80px;
+    gap: 100px;
     position: relative;    
 }
 
@@ -87,7 +87,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    gap: 100px;
 }
 
 .text-area{
@@ -157,10 +157,7 @@ button{
 
 
 button:hover{    
-    box-shadow: 0px 0px 10px 5px var(--mainColor);
-    text-shadow: 0px 0px 10px var(--mainColor); 
-    border-radius: 50px;
-    width: 280px;    
+    box-shadow: 0px 0px 10px 5px var(--mainColor);      
 }
 
 .btn-encoder{
@@ -169,8 +166,7 @@ button:hover{
 }
 
 .btn-encoder:hover{
-    box-shadow: 0px 0px 10px 5px white;
-    text-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px 5px white;   
 }
 
 
