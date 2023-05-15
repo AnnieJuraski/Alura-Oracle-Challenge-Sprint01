@@ -3,19 +3,27 @@
     --green: #006329;
     --red: #ce001b;
     --purple: #5e0983;
-    --colorBGGradient: #030303;
-    --bgThemeContainer: rgba(15, 15, 15, 0.4);
+    --colorBGGradient: #000000;
+    --bgThemeContainer: rgb(17, 17, 17);
     --textColor: #f0f0f0;
     --bgMSG: #161616;
+    --border: 1px solid rgba(223, 223, 223, .1);
+    --bgToggler: rgb(3, 3, 3);
+    --indicatorColor: #d8d8d8;
+    --mainColor: var(--blue);
+
 }
 
 
 
 .light-theme {
-    --bgThemeContainer: rgba(218, 218, 218, 0.1);
+    --bgToggler: rgba(245, 245, 245, .5);
+    --bgThemeContainer: rgb(190, 190, 190);
     --textColor: #050505;
     --colorBGGradient: #b8b8b8;
     --bgMSG: #cecece;
+    --border: 1px solid rgba(0, 0, 0, .3);
+
 }
 
 
@@ -25,7 +33,7 @@
     font-family: 'Ubuntu', sans-serif;
     line-height: 150%;
     font-weight: 400;
-    
+    transition: .3s linear;
 }
 
 
@@ -34,10 +42,10 @@ html {
 }
 
 body {
-    --mainColor: var(--blue);
+    
     height: 100vh;
     background: linear-gradient(45deg, var(--colorBGGradient) 0%, var(--mainColor) 90%);
-    background-size: 400%;
+    background-size: 600%;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -52,6 +60,7 @@ header {
     height: 80px;
     background-color: var(--mainColor);
     box-shadow: 0 5px 25px black;
+    width: 100vw;
 
 }
 
@@ -84,27 +93,46 @@ header {
 
 
 
-.themes-container{
-    position: fixed;    
-    top: 0; right: 0;
+.themes-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
     height: 100vh;
-    width: 400px;
+    width: 300px;
+    padding: 0 20px;
     background: var(--bgThemeContainer);
     backdrop-filter: blur(10px);
     z-index: 1000;
+    text-align: right;
+    transition: .3s ease-in-out;
 }
 
+.themes-container.active {
+    right: 0;
+}
+
+
 #theme-closer {
+    margin-top: 15px;
     width: 5rem;
     height: 5rem;
     color: var(--textColor);
     cursor: pointer;
+    transition: 0.1s ease-in-out;
 }
 
-.themes-container h3{
+#theme-closer:active {
+    transform: scale(0.8);
+}
+
+.themes-container h3 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--textColor);
+    border-top: var(--border);
+    border-bottom: var(--border);
+    padding: 15px 0;
+    margin: 30px 0;
 }
 
 
@@ -118,30 +146,46 @@ header {
     gap: 1rem;
 }
 
-.themes-container .theme-toggler .toggler{
+.themes-container .theme-toggler .toggler {
     height: 30px;
-    width: 100px;
+    width: 80px;
     border: 2px solid var(--textColor);
     border-radius: 40px;
     position: relative;
+    background-color: var(--bgToggler);
+    cursor: pointer;
 }
 
-.theme-toggler .toggler #indicator{
+.theme-toggler .toggler #indicator {
     content: " ";
     position: absolute;
     height: 30px;
     width: 30px;
+    top: 0;
+    left: 0;
     border-radius: 50%;
     transform: scale(0.8);
-    background: var(--mainColor);
-    cursor: pointer;   
+    background: linear-gradient(235deg, #525252, #1a1a1a);
+
+    transition: 0.5s;
 }
+
+.theme-toggler .toggler #indicator.active {
+    left: 50px;
+    background: var(--indicatorColor);
+    box-shadow: 0px 0px 4px 2px black,
+        inset 0px 3px 2px 1px rgba(255, 255, 255, 0.8),
+        inset 0px -1px 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+
 
 
 
 .theme-btn-container {
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .color-btn {
@@ -150,7 +194,13 @@ header {
     height: 50px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
+
+.color-btn:hover {
+    opacity: .5;
+}
+
 
 
 
@@ -207,10 +257,12 @@ main {
     box-sizing: border-box;
     background: transparent;
     height: 700px;
-    width: 1000px;
+    width: 80vh;
     font-size: 2rem;
     color: var(--textColor);
+    color: var(--mainColor);
     resize: none;
+    font-size: 3rem;
 }
 
 .text-area:focus {
@@ -268,7 +320,7 @@ main {
     border: none;
     box-sizing: border-box;
     height: 700px;
-    width: 40vw;
+    width: 35vw;
     padding: 20px;
     resize: none;
     backdrop-filter: blur(20px);

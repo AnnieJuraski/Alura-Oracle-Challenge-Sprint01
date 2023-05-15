@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-<body /*class="light-theme"*/ >
+<body >
     <header class="header">
         <img src="./src/img/logo-alura.svg" class="logoAlura" alt="Logo da Alura">
     </header>
@@ -52,7 +52,7 @@
         <div class="theme-toggler">
             <span>Escuro</span>
             <div class="toggler">
-                <span id="indicator"></span>
+                <div id="indicator"></div>
             </div>
             <span>Claro</span>
         </div>
@@ -61,10 +61,10 @@
 
 
         <div class="theme-btn-container">
-            <span class="color-btn" id="blue-btn" data-color"#0f3397" style="background: #0f3397;"></span>
-            <span class="color-btn" id="green-btn" data-color"#006329" style="background: #006329;"></span>
-            <span class="color-btn" id="red-btn" data-color"#ce001b" style="background: #ce001b;"></span>
-            <span class="color-btn" id="red-btn" data-color"#5e0983" style="background: #5e0983;"></span>
+            <span class="color-btn" data-color="#0f3397" style="background: #0f3397;"></span>
+            <span class="color-btn" data-color="#006329" style="background: #006329;"></span>
+            <span class="color-btn" data-color="#ce001b" style="background: #ce001b;"></span>
+            <span class="color-btn" data-color=#5e0983 style="background: #5e0983;"></span>
         </div>
 
 
@@ -104,7 +104,7 @@
 
 
             <div class="msg-container">
-                <textarea class="msg" cols="20" rows="10"></textarea>
+                <textarea readonly class="msg" cols="20" rows="10"></textarea>
                 <button class="btn-copy">Copiar</button>
             </div>
         </div>
