@@ -34,16 +34,17 @@
     line-height: 150%;
     font-weight: 400;
     transition: .3s linear;
+    margin: 0;
 }
 
 
 html {
     font-size: 62.5%;
+    height: 100vh;
 }
 
 body {
-    
-    height: 100vh;
+    margin: 0;    
     background: linear-gradient(45deg, var(--colorBGGradient) 0%, var(--mainColor) 90%);
     background-size: 600%;
     font-family: 'Ubuntu', sans-serif;
@@ -56,7 +57,7 @@ body {
 header {
     display: flex;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     height: 80px;
     background-color: var(--mainColor);
     box-shadow: 0 5px 25px black;
@@ -216,7 +217,7 @@ main {
 
 
 .title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     margin: 15px auto;
     font-family: 'Ubuntu', sans-serif;
     color: var(--textColor);

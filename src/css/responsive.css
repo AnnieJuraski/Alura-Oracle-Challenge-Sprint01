@@ -1,0 +1,132 @@
+@media (max-width: 1920px){    
+
+    .text-area{
+        height: 600px;
+        font-size: 2.5rem;
+        width: 42vw;
+    }
+
+    .msg{
+        height: 600px;
+        width: 40vw;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+    .content{
+        padding: 0 20px;
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 1280px){    
+    html{
+        height: 100%;
+    }
+
+    .text-area, .msg{
+        height: 550px;
+        font-size: 2rem;
+        width: 45vw;
+    }
+
+    .btn-container {
+        gap: 15px;
+    }
+
+    .msg-container,
+    .txt-container{
+        gap: 50px;
+    }
+
+    .info{
+        bottom: 70px;
+        font-size: 1.8rem;
+    }
+
+
+     button{
+        font-size: 1.6rem;
+        height: 60px;
+        width: 180px;
+        padding: 0px;
+        border-radius: 15px;
+    }
+}
+
+
+@media (max-width: 1110px) {
+    .title{
+        display: none;
+    }   
+
+    html{
+        height: 150vh;
+        width: 100%;
+    }
+
+    header{
+        width: 100vw;
+        margin-bottom: 0;
+    }
+
+   
+
+
+    .content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;   
+        gap: 80px;   
+        align-items: center;
+    }
+
+    .txt-container,
+    .msg-container{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        gap: 20px;
+                
+    }
+
+
+    .text-area, .msg{
+        height: 550px;
+        font-size: 2rem;
+        width: 650px;
+    }
+
+    #theme-opener{
+        right: 50px;
+        z-index: 999;
+    }
+
+    .info{
+        position: static;
+        justify-content: center;
+        align-items: center;        
+        
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        width: 100vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
