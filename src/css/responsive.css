@@ -13,13 +13,10 @@
 
     .content {
         padding: 0 20px;
+        gap: 10px;
     }
-    .content{
-        padding: 0 20px;
-        gap: 15px;
-    }
+   
 }
-
 
 @media (max-width: 1280px){    
     html{
@@ -114,10 +111,104 @@
 }
 
 @media (max-width: 700px){
+
+    .themes-container{
+        height: 200vh;
+    }
+
+   
+
+    body{
+        margin: 0;
+        width: 120%;
+        height: 100vh;
+    }
+
+  
+       
+
     header{
-        width: 100vw;
+        width: 120vw;
+    }
+
+
+    .txt-container,
+    .msg-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;                
+    }
+
+    button{
+        font-size: 1.4rem;
+        height: 40px;
+        width: 120px;
+    }
+
+
+    .text-area, .msg{
+        height: 350px;
+        font-size: 2rem;
+        width: 550px;
+        color: var(--textColor);
     }
 }
+
+
+@media (max-width: 300px){
+
+    
+    body{
+        margin: 0;
+        width: 120%;
+        height: 100vh;
+    }
+
+  
+       
+
+    header{
+        width: 120vw;
+    }
+
+
+    .text-area, .msg{
+        height: 350px;
+        font-size: 2rem;
+        width: 250px;
+        color: var(--textColor);
+    }
+    
+}
+
+
+@media (max-width: 500px){
+
+    
+    body{
+        margin: 0;
+        width: 120%;
+        height: 100vh;
+    }
+
+  
+       
+
+    header{
+        width: 120vw;
+    }
+
+
+    .text-area, .msg{
+        height: 350px;
+        font-size: 2rem;
+        width: 250px;
+        color: var(--textColor);
+    }
+    
+}
+    
 
 
 

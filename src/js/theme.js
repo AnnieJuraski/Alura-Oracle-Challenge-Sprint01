@@ -44,9 +44,16 @@ colorPicker.forEach(color => {
    
     
 
-themeOpen.addEventListener('click', function () {    
+themeOpen.addEventListener('click', function () {   
+    var width = document.body.clientWidth; 
     themeMenu.classList.add('active');
-    body.style.paddingRight = '350px';
+
+    if(width > '600px'){
+        body.style.paddingRight = '300px';
+    }
+
+    
+    
 })
 
  themeClose.addEventListener('click', function () {
