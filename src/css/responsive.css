@@ -18,6 +18,12 @@
    
 }
 
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
 @media (max-width: 1280px){    
     html{
         height: 100%;
@@ -54,18 +60,41 @@
 }
 
 
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
+@media (max-width: 1280px){
+    html{
+        height: 280vh;
+    }
+    
+    
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
 @media (max-width: 1110px) {
     .title{
         display: none;
     }   
 
     html{
-        height: 150vh;
+        height: 100vh;
         width: 100%;
+        max-height: 1600px;
+
     }
 
     header{
-        width: 100vw;
+        width: 120vw;
         margin-bottom: 0;
     }
 
@@ -110,10 +139,50 @@
     }
 }
 
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
+@media (max-width: 1024px){
+
+    html{
+        height: 820%;
+        width:100vw;
+    }
+
+    body{
+        margin: 0;
+    }   
+
+    header{
+        width: 120vw;
+    }
+
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
+
+
+
+
+
 @media (max-width: 700px){
 
     .themes-container{
         height: 200vh;
+    }
+
+    html{
+        max-height: 1200px;
     }
 
    
@@ -122,6 +191,13 @@
         margin: 0;
         width: 120%;
         height: 100vh;
+        max-height: 800px;
+    }
+
+    #theme-opener{
+        top: 2%;
+        left: 85%;
+        position: absolute;
     }
 
   
@@ -150,53 +226,42 @@
     .text-area, .msg{
         height: 350px;
         font-size: 2rem;
-        width: 550px;
+        width: 500px;
         color: var(--textColor);
     }
 }
 
 
-@media (max-width: 300px){
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
 
-    
-    body{
-        margin: 0;
-        width: 120%;
-        height: 100vh;
-    }
-
-  
-       
-
-    header{
-        width: 120vw;
-    }
-
-
-    .text-area, .msg{
-        height: 350px;
-        font-size: 2rem;
-        width: 250px;
-        color: var(--textColor);
-    }
-    
-}
 
 
 @media (max-width: 500px){
 
+    html{
+        height: 130vh;
+        max-height:  1500px;
+        width: 100%;
+    }
+    
+
     
     body{
-        margin: 0;
-        width: 120%;
-        height: 100vh;
-    }
+        height: 100%;
+    }   
 
-  
+    #theme-opener{
+        top: -60px;
+        height: 4rem;
+        right: -100%;
+        position: relative;
+    }
        
 
     header{
-        width: 120vw;
+        width: 100vw;
     }
 
 
@@ -207,6 +272,81 @@
         color: var(--textColor);
     }
     
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
+
+@media (max-width: 390px){
+
+    html{
+        height: 6000px;
+        width: 100vw;
+    }
+
+    
+   
+
+    #theme-opener{
+        top: -8.5%;
+        left: 85%;
+        height: 4rem;
+        position: relative;
+    }
+       
+
+    header{
+        width: 120vw;
+    }
+    
+
+    main{
+        width: 90%;               
+    }
+
+
+
+
+
+    .text-area, .msg{
+        height: 350px;
+        font-size: 2rem;
+        width: 250px;
+        color: var(--textColor);
+    }
+    
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+
+@media (max-width: 280px){
+
+    #theme-opener{
+        top: -5%;
+        height: 4rem;
+        left: 80%;
+    }
+
+    
+
+    html{
+        height: 180vh;
+    }
+    body{
+        height: 100%;
+    }
+
+
 }
     
 
