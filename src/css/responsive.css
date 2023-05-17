@@ -27,7 +27,6 @@
 @media (max-width: 1280px){    
     html{
         height: auto;
-        width: 100vw;
     }
 
     body{
@@ -85,11 +84,7 @@
     .title{
         display: none;
     }   
-
-    html{        
-        width: 100%;
-    }
-   
+  
 
     .logoAlura {
         margin-left: 20px;
@@ -170,33 +165,14 @@
 
     .txt-container{
         width: auto;
-    }
+    }   
 
-    html{
-        height: 100vh;
-    }
-
-
-
-   
-
-   header{
-        width: 100%;
-    } 
     
     .text-area, .msg{
         height: 450px;
         font-size: 2rem;
         width: 600px;
     }
-
-
- 
-
-
-
-
-
 }
 
 
