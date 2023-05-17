@@ -16,13 +16,12 @@
 
     .content {
         margin-top: 3rem;
-    }
-    
+    }    
 
     .content {
         display: flex;
         padding: 0 80px;
-        justify-content: space-between;
+        justify-content: space-between;        
     }
 
     .text-area{
