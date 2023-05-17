@@ -12,22 +12,19 @@
     main {
         display: flex;
         flex-direction: column;
+        padding: 0 50px;
     }
+      
 
     .content {
         margin-top: 3rem;
-    }    
-
-    .content {
-        display: flex;
-        padding: 0 80px;
-        justify-content: space-between;        
     }
 
+   
     .text-area{
         height: 500px;
         font-size: 2.5rem;
-        width: 42vw;
+        width: 42vw;      
     }
 
     .msg{
