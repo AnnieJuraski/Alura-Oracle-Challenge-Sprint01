@@ -19,7 +19,7 @@ Obs.: Como nota pessoal, gostaria de tentar depois uma resolução que permita u
 <br>
 <h2> Metodologia de criptografia </h2>
 <br>
-Criei duas arrays, uma com os caracteres válidos chamada de "alphabet" e outra com o que eles irão se tornar após criptografados. Então com o uso do JS, criei uma função que após checar se os caracteres ão todos válidos, captura o valor do input e então verificar cada um dos indices do valor capturado e identifica eles dentro da array "alphabet", retornando o índice da devida letra e então adiciona à mensagem o valor que ele encontrou no mesmo índice dentro da array "cypher".
+Criei duas arrays, uma com os caracteres válidos chamada de "alphabet" e outra com o que eles irão se tornar após criptografados, chamada "cypher". Então com o uso do JS, criei uma função que após checar se os caracteres ão todos válidos, captura o valor do input e então verificar cada um dos indices do valor capturado e identifica eles dentro da array "alphabet", retornando o índice da devida letra e então adiciona à mensagem o valor que ele encontrou no mesmo índice dentro da array "cypher".
 <br>
 Para descriptogrfar o processo é parecido, porém uso nested loops que checa se a mensagem no indice i começa com o valor da array cypher no índice J. Se for encontrado, ele adiciona o valor da array "alphabet" no mesmo índice J e sai do loop.
 <br>
@@ -34,8 +34,8 @@ Optei por não seguir o layout guia e ter uma abordagem diferente. Um layout com
 <h2> Tecnologias utilizadas neste projeto</h2>
 <br>
    <div>
-      <img align="center" height="100"  alt="css icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">  &nbsp;     
-      <img align="center" height="100" alt="js icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> &nbsp;&nbsp;
-      <img align="center" height="100" alt="html icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> &nbsp;            
+      <img align="center" height="60"  alt="css icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">  &nbsp;     
+      <img align="center" height="60" alt="js icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> &nbsp;&nbsp;
+      <img align="center" height="60" alt="html icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> &nbsp;            
     </div>
 
