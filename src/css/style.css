@@ -325,7 +325,7 @@ main {
 
 
 .msg {
-    background: rgba(100, 100, 100, 0.1);
+    background: rgba(100, 100, 100, 0.2);
     border-radius: 30px;
     border: none;
     box-sizing: border-box;
@@ -346,7 +346,28 @@ main {
 }
 
 
+/* ********* Scrollbar ********** */
 
+
+.msg::-webkit-scrollbar,
+.text-area::-webkit-scrollbar{
+    width: 10px;
+   
+}
+
+
+.msg::-webkit-scrollbar-track,
+.text-area::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+
+
+.msg::-webkit-scrollbar-thumb,
+.text-area::-webkit-scrollbar-thumb{
+    background-color: var(--mainColor);
+    border-radius: 5px;
+}
 
 
 /* ********* Buttons ********** */

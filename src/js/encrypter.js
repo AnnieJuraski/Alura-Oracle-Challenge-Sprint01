@@ -3,12 +3,30 @@ const message = document.getElementById('msg');
 
 const encryptButton = document.querySelector('.btn-encoder');
 const decryptButton = document.querySelector('.btn-decoder');
+const copyButton = document.querySelector('.btn-copy');
+
+
+const cypher = [
+  'eno', 'owt', 'eehrt', 'ruof', 'evif', 'xis', 'neves',
+  'thgie', 'enin', 'net', 'ichi', 'ni', 'san', 'shi', 'go', 'roku',
+  'nana', 'hachi', 'kyu', 'ju', 'mu', 'siod', 'sert', 'ortuaq',
+  'ocnic', 'sies'
+];
+
+const alphabet = [
+  'a', 'b', 'c', 'd', 'e', 'f',
+  'g', 'h', 'i', 'j', 'k', 'l',
+  'm', 'n', 'o', 'p', 'q', 'r',
+  's', 't', 'u', 'v', 'w', 'x',
+  'y', 'z'
+];
 
 
 
 
 
 //Encrypt button
+
 encryptButton.addEventListener('click', function () {
   let plainText = textArea.value;
   let encryptedMSG = encrypt(plainText);
@@ -20,32 +38,23 @@ encryptButton.addEventListener('click', function () {
     message.style.backgroundImage = 'none';
     message.value = encryptedMSG;
     textArea.value = "";
-  } else{
-    alert('Insira apenas letras sem acentos, sem números ou caracteres especiais');
-    textArea.value = "";
+  } else {
+    showErrorMessage();
   }
 })
 
 
-
-
-//Decrypt button
-decryptButton.addEventListener('click', () => {
-  let cryptedText = textArea.value;
-  let decyptedMSG = decrypt(cryptedText);
-
-  message.style.backgroundImage = 'none';
-  message.value = decyptedMSG;
-  textArea.value = "";
-})
-
-
-function checkCharacters(string) {
-  return /^[a-zA-Z ]+$/.test(string);
+function showErrorMessage() {
+  alert('Insira apenas letras sem acentos, sem números ou caracteres especiais');
+  textArea.value = '';
+  message.value = '';
+  message.style.setProperty('background-image','var(--msgBGImage)' );
 }
 
 
-
+function checkCharacters(string) {
+  return /^[a-zA-Z \n]+$/.test(string);
+}
 
 
 
@@ -68,6 +77,18 @@ function encrypt(text) {
   return encryptedMessage;
 }
 
+
+
+//Decrypt button
+
+decryptButton.addEventListener('click', () => {
+  let cryptedText = textArea.value;
+  let decyptedMSG = decrypt(cryptedText);
+
+  message.style.backgroundImage = 'none';
+  message.value = decyptedMSG;
+  textArea.value = "";
+})
 
 
 function decrypt(encryptedMessage) {
@@ -96,19 +117,3 @@ function decrypt(encryptedMessage) {
 
 
 
-const cypher = [
-  'eno', 'owt', 'eehrt', 'ruof', 'evif', 'xis', 'neves',
-  'thgie', 'enin', 'net', '!', '@', '#', '$', '%', '¬',
-  '&', '*', '+', '=', 'mu', 'siod', 'sert', 'ortuaq',
-  'ocnic', 'sies', 'etes'
-];
-
-
-
-const alphabet = [
-  'a', 'b', 'c', 'd', 'e', 'f',
-  'g', 'h', 'i', 'j', 'k', 'l',
-  'm', 'n', 'o', 'p', 'q', 'r',
-  's', 't', 'u', 'v', 'w', 'x',
-  'y', 'z'
-];
