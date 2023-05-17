@@ -1,13 +1,39 @@
 @media (max-width: 1920px){    
 
+   body{
+        height: auto;
+    }
+
+    .title{
+        font-size: 2.8rem;
+        margin: 10px auto;
+    }
+   
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-top: 3rem;
+    }
+    
+
+    .content {
+        display: flex;
+        padding: 0 80px;
+        justify-content: space-between;
+        border: 2px solid seagreen;
+    }
+
     .text-area{
-        height: 600px;
+        height: 500px;
         font-size: 2.5rem;
         width: 42vw;
     }
 
     .msg{
-        height: 600px;
+        height: 500px;
         width: 40vw;
     }
 

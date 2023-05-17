@@ -52,7 +52,7 @@ themeOpen.addEventListener('click', function () {
     var width = document.body.clientWidth; 
     themeMenu.classList.add('active');
 
-    if(width > '600px'){
+    if(width >600){
         body.style.paddingRight = '300px';
     }    
 })
