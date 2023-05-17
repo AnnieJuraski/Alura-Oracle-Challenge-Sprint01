@@ -26,7 +26,12 @@
 
 @media (max-width: 1280px){    
     html{
-        height: 100%;
+        height: auto;
+        width: 100vw;
+    }
+
+    body{
+        padding: 0 0 50px 0;
     }
 
     .text-area, .msg{
@@ -42,6 +47,12 @@
     .msg-container,
     .txt-container{
         gap: 50px;
+    }
+
+    #theme-opener{
+        position: absolute;
+        height: 4rem;
+        top: 20px;
     }
 
     .info{
@@ -66,18 +77,7 @@
 
 
 
-@media (max-width: 1280px){
-    html{
-        height: 280vh;
-    }
-    
-    
-}
 
-
-/* ***************************** */
-/* ----------------------------- */
-/* ***************************** */
 
 
 
@@ -87,19 +87,25 @@
     }   
 
     html{
-        height: 100vh;
+        height: 700px;
         width: 100%;
-        max-height: 1600px;
-
     }
 
-    header{
-        width: 120vw;
-        margin-bottom: 0;
+    body{
+        height: 700px;
     }
 
    
 
+    .logoAlura {
+        margin-left: 20px;
+        height: 2.5rem;
+    }
+
+    header{
+        height: 50px;
+    }
+   
 
     .content {
         margin-top: 20px;
@@ -127,15 +133,16 @@
     }
 
     #theme-opener{
+        position: absolute;
+        height: 3rem;
         right: 50px;
-        z-index: 999;
+        top: 10px;
     }
 
     .info{
         position: static;
         justify-content: center;
-        align-items: center;        
-        
+        align-items: center;           
     }
 }
 
@@ -149,16 +156,19 @@
 @media (max-width: 1024px){
 
     html{
-        height: 820%;
-        width:100vw;
+        height: auto;
+        width:100%;
     }
 
     body{
+        padding: 0;
+        width:100%;
+        height: auto;
         margin: 0;
     }   
 
     header{
-        width: 120vw;
+        width: 100%;
     }
 
 }
@@ -177,21 +187,15 @@
 
 @media (max-width: 700px){
 
-    .themes-container{
-        height: 200vh;
-    }
-
+    
     html{
-        max-height: 1200px;
+        height: auto;
     }
 
    
 
     body{
-        margin: 0;
-        width: 120%;
-        height: 100vh;
-        max-height: 800px;
+        height: 200vw;
     }
 
     #theme-opener{
@@ -202,10 +206,19 @@
 
   
        
-
     header{
-        width: 120vw;
+        height: 50px;
+        width: 100%;
     }
+
+    #theme-opener{
+        top: 10px;
+        left: 90%;
+        height: 3rem;
+        right: -120%;
+        position: absolute;
+    }
+    
 
 
     .txt-container,
@@ -240,32 +253,39 @@
 
 @media (max-width: 500px){
 
-    html{
-        height: 130vh;
-        max-height:  1500px;
+
+    
+   
+
+    body{
+        height: auto;
+        width: auto;           
+    }    
+    
+
+    .logoAlura {
+        margin-left: 20px;
+        height: 3rem;
+    }
+
+    header{
         width: 100%;
     }
-    
-
-    
-    body{
-        height: 100%;
-    }   
+     
 
     #theme-opener{
-        top: -60px;
-        height: 4rem;
+        top: -70px;
+        height: 3rem;
         right: -100%;
         position: relative;
     }
-       
 
-    header{
-        width: 100vw;
-    }
+   
+
 
 
     .text-area, .msg{
+        width: 300px;
         height: 350px;
         font-size: 2rem;
         width: 250px;
@@ -285,8 +305,20 @@
 @media (max-width: 390px){
 
     html{
-        height: 6000px;
-        width: 100vw;
+        background-size: cover;
+        height: 200%;
+        width: 300px;
+    }
+
+    body{
+        width: 100vw;    }
+
+    
+
+
+    .content{
+        padding: auto 0;
+        width: auto;
     }
 
     
@@ -301,7 +333,7 @@
        
 
     header{
-        width: 120vw;
+        width: 100vw;
     }
     
 
@@ -337,13 +369,22 @@
         left: 80%;
     }
 
+    #theme-opener{
+        top: 10px;
+        left: 99%;
+        height: 3rem;
+        position: absolute;
+    }
+
+    header{
+        width: 100%;
+    }
     
 
-    html{
-        height: 180vh;
-    }
+   
     body{
-        height: 100%;
+        height: auto;
+        width: 100vw;
     }
 
 
