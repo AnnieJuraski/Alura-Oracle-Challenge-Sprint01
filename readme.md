@@ -34,8 +34,8 @@ Optei por não seguir o layout guia e ter uma abordagem diferente. Um layout com
 <h2> Tecnologias utilizadas neste projeto</h2>
 <br>
    <div>
-      <img align="center" height="60"  alt="css icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">  &nbsp;     
-      <img align="center" height="60" alt="js icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> &nbsp;&nbsp;
-      <img align="center" height="60" alt="html icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> &nbsp;            
+      <img align="center" height="80"  alt="css icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">  &nbsp;     
+      <img align="center" height="80" alt="js icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"> &nbsp;&nbsp;
+      <img align="center" height="80" alt="html icon" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> &nbsp;            
     </div>
 
