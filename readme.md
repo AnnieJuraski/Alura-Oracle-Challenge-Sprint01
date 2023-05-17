@@ -8,9 +8,9 @@ O desafio consistia em criar um codificador e decodificador de texto usando Java
 <br>
 <h2>Requisitos</h2>
 <br>
-- Deve funcionar apenas com letras minúsculas
-- Não devem ser utilizados letras com acentos nem caracteres especiais
-- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.
+- Deve funcionar apenas com letras minúsculas<br>
+- Não devem ser utilizados letras com acentos nem caracteres especiais<br>
+- Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.<br>
 <br>
 Obs.: Como nota pessoal, gostaria de tentar depois uma resolução que permita usar caracteres especiais.
 <br>
