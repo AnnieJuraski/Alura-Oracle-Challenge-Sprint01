@@ -50,11 +50,10 @@ themeOpen.addEventListener('click', function () {
 
     if(width > '600px'){
         body.style.paddingRight = '300px';
-    }
-
-    
-    
+    }    
 })
+
+
 
  themeClose.addEventListener('click', function () {
     themeMenu.classList.remove('active');
