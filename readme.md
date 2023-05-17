@@ -1,4 +1,4 @@
-<h1> Challenge Oracle One e Alura - Criptografador de texto </1>
+<h1> Challenge Oracle One e Alura - Criptografador de texto </h1>
 <br>
 <br>
 Esse projeto é minha resolução do desafio Sprint 01 da Alura, dentro do programa Oracle Next Education (ONE).
@@ -6,7 +6,7 @@ Esse projeto é minha resolução do desafio Sprint 01 da Alura, dentro do progr
 O desafio consistia em criar um codificador e decodificador de texto usando Javascript usando também HTML e CSS para estruturação e estilização. 
 <br>
 <br>
-<h2>Requisitos<h2>
+<h2>Requisitos</h2>
 <br>
 - Deve funcionar apenas com letras minúsculas
 - Não devem ser utilizados letras com acentos nem caracteres especiais
