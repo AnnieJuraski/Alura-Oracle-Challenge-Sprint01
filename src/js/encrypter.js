@@ -94,23 +94,36 @@ decryptButton.addEventListener('click', () => {
 function decrypt(encryptedMessage) {
 
   let decryptedMessage = '';
+  let isValid = checkCharacters(plainText);
 
-  for (let i = 0; i < encryptedMessage.length; i++) {
-    let found = false;
-    for (let j = 0; j < cypher.length; j++) {
-      if (encryptedMessage.startsWith(cypher[j], i)) {
-        decryptedMessage += alphabet[j];
-        i += cypher[j].length - 1;
-        found = true;
-        break;
+  if(isValid){
+    for (let i = 0; i < encryptedMessage.length; i++) {
+      let found = false;
+      for (let j = 0; j < cypher.length; j++) {
+        if (encryptedMessage.startsWith(cypher[j], i)) {
+          decryptedMessage += alphabet[j];
+          i += cypher[j].length - 1;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        decryptedMessage += encryptedMessage[i];
       }
     }
-    if (!found) {
-      decryptedMessage += encryptedMessage[i];
-    }
-  }
-  return decryptedMessage;
+    return decryptedMessage;
+  }else{
+    showErrorMessage();
+  }  
 }
+
+
+//Copy button
+
+copyButton.addEventListener('click', () => {
+
+  
+})
 
 
 

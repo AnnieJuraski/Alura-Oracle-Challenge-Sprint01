@@ -57,7 +57,7 @@
 
     .info{
         bottom: 70px;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
 
@@ -86,15 +86,9 @@
         display: none;
     }   
 
-    html{
-        height: 700px;
+    html{        
         width: 100%;
     }
-
-    body{
-        height: 700px;
-    }
-
    
 
     .logoAlura {
@@ -121,8 +115,7 @@
         flex-direction: column;
         margin: 0;
         align-items: center;
-        gap: 20px;
-                
+        gap: 20px;                
     }
 
 
@@ -155,21 +148,54 @@
 
 @media (max-width: 1024px){
 
-    html{
-        height: auto;
-        width:100%;
+
+    .content {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;   
+        gap: 80px;   
+        align-items: center;
     }
 
-    body{
-        padding: 0;
-        width:100%;
-        height: auto;
+
+    .txt-container,
+    .msg-container{
+        flex-direction: column;
         margin: 0;
-    }   
-
-    header{
-        width: 100%;
+        align-items: center;
+        gap: 20px;             
     }
+
+
+    .txt-container{
+        width: auto;
+    }
+
+    html{
+        height: 100vh;
+    }
+
+
+
+   
+
+   header{
+        width: 100%;
+    } 
+    
+    .text-area, .msg{
+        height: 450px;
+        font-size: 2rem;
+        width: 600px;
+    }
+
+
+ 
+
+
+
+
 
 }
 
@@ -240,7 +266,6 @@
         height: 350px;
         font-size: 2rem;
         width: 500px;
-        color: var(--textColor);
     }
 }
 
@@ -289,7 +314,6 @@
         height: 350px;
         font-size: 2rem;
         width: 250px;
-        color: var(--textColor);
     }
     
 }
@@ -349,7 +373,6 @@
         height: 350px;
         font-size: 2rem;
         width: 250px;
-        color: var(--textColor);
     }
     
 }
