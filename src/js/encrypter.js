@@ -94,7 +94,7 @@ decryptButton.addEventListener('click', () => {
 function decrypt(encryptedMessage) {
 
   let decryptedMessage = '';
-  let isValid = checkCharacters(plainText);
+  let isValid = checkCharacters(encryptedMessage);
 
   if(isValid){
     for (let i = 0; i < encryptedMessage.length; i++) {
@@ -122,7 +122,9 @@ function decrypt(encryptedMessage) {
 
 copyButton.addEventListener('click', () => {
 
-  
+  message.select();
+  message.setSelectionRange(0, 99999); 
+  navigator.clipboard.writeText(message.value)  
 })
 
 
