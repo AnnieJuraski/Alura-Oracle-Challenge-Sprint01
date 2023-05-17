@@ -29,7 +29,7 @@ toggler.addEventListener('click', function () {
 })
 
 
-
+// ********** Color picker **********
 
 colorPicker.forEach(color => {
     color.addEventListener('click', function(){
@@ -44,6 +44,10 @@ colorPicker.forEach(color => {
    
     
 
+
+// ********** Close and open theme container **********
+
+
 themeOpen.addEventListener('click', function () {   
     var width = document.body.clientWidth; 
     themeMenu.classList.add('active');
@@ -52,7 +56,6 @@ themeOpen.addEventListener('click', function () {
         body.style.paddingRight = '300px';
     }    
 })
-
 
 
  themeClose.addEventListener('click', function () {

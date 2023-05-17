@@ -12,6 +12,7 @@
     --indicatorColor: #d8d8d8;
     --mainColor: var(--blue);
     --msgBGImage: url(/src/img/encrypt_lock3.png);
+    --bgSize: 600%;
 
 }
 
@@ -24,7 +25,7 @@
     --colorBGGradient: #b8b8b8;
     --bgMSG: #cecece;
     --border: 1px solid rgba(0, 0, 0, .3);
-
+    --bgSize: 200%;
 }
 
 
@@ -48,7 +49,7 @@ body {
     margin: 0;    
     background-color: var(--colorBGGradient);
     background: linear-gradient(45deg, var(--colorBGGradient) 0%, var(--mainColor) 90%);
-    background-size: 200%;
+    background-size: var(--bgSize);
     font-family: 'Ubuntu', sans-serif;
 }
 
