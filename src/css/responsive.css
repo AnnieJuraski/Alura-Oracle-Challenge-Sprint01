@@ -23,7 +23,6 @@
         display: flex;
         padding: 0 80px;
         justify-content: space-between;
-        border: 2px solid seagreen;
     }
 
     .text-area{
