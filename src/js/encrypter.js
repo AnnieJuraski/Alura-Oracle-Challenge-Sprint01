@@ -33,14 +33,18 @@ encryptButton.addEventListener('click', function () {
 
   let isValid = checkCharacters(plainText);
 
-
-  if (isValid) {
-    message.style.backgroundImage = 'none';
-    message.value = encryptedMSG;
-    textArea.value = "";
-  } else {
-    showErrorMessage();
+  if(plainText.trim().length === 0){
+    return;
   }
+  else{
+    if (isValid) {
+      message.style.backgroundImage = 'none';
+      message.value = encryptedMSG;
+      textArea.value = "";
+    } else {
+      showErrorMessage();
+    }
+  }  
 })
 
 
@@ -124,11 +128,7 @@ copyButton.addEventListener('click', () => {
 
   message.select();
   message.setSelectionRange(0, 99999); 
-  navigator.clipboard.writeText(message.value)  
+  navigator.clipboard.writeText(message.value);
+  alert('Texto copiado!');
+
 })
-
-
-
-
-
-
