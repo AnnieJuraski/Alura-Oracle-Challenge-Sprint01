@@ -47,15 +47,6 @@ encryptButton.addEventListener('click', function () {
   }  
 })
 
-
-function showErrorMessage() {
-  alert('Insira apenas letras sem acentos, sem números ou caracteres especiais');
-  textArea.value = '';
-  message.value = '';
-  message.style.setProperty('background-image','var(--msgBGImage)' );
-}
-
-
 function checkCharacters(string) {
   return /^[a-zA-Z \n]+$/.test(string);
 }
@@ -132,3 +123,12 @@ copyButton.addEventListener('click', () => {
   alert('Texto copiado!');
 
 })
+
+
+
+function showErrorMessage() {
+  alert('Insira apenas letras sem acentos, sem números ou caracteres especiais');
+  textArea.value = '';
+  message.value = '';
+  message.style.setProperty('background-image','var(--msgBGImage)' );
+}
