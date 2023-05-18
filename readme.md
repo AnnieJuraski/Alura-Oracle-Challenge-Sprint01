@@ -6,18 +6,30 @@ Esse projeto é minha resolução do desafio Sprint 01 da Alura, dentro do progr
 O desafio consistia em criar um codificador e decodificador de texto usando Javascript usando também HTML e CSS para estruturação e estilização. 
 <br>
 <br>
+Link para o projeto: https://anniealves.github.io/Alura-Oracle-Challenge-Sprint01/
+<br>
+<br>
+
+
+
+<div align="center">
+   
+   ![cms_files_10224_1671211139Prancheta_3](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/5517e70b-75f7-44c5-b3ad-4bbe31efe07a)
+   
+</div>
+<h6 align="center">Badge do Desafio</h6>
 
 <h2>Screenshots</h2>
 
-<h3> Deafault - Dark Mode + Blue </h3>
+<h3 align="center" > Deafault - Dark Mode + Blue </h3>
 <br>
 
 ![Blue_default](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/8dd14509-9bfa-4283-b595-8db8b120d214)
-<h3> Dark Mode + Purple </h3>
+<h3 align="center" > Dark Mode + Purple </h3>
 <br>
 
 ![Purple](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/ef11bef8-c0b0-4c06-87cf-6337a43213b0)
-<h3> Light Mode + Green - Open Menu </h3>
+<h3 align="center" >Light Mode + Green - Open Menu  </h3>
 <br>
 
 ![light-theme_green_open-menu](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/358c7ab7-b66b-483b-a7f0-0c1cf6d184b0)
