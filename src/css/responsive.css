@@ -164,6 +164,9 @@
 
 @media (max-width: 1024px){
 
+   
+
+    
 
     .content {
         margin-top: 20px;
@@ -203,7 +206,30 @@
 
 
 
+@media (max-width: 912px){
 
+    body{
+        height: 110vh;
+    }
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
+
+
+@media (max-width: 768px){
+
+    body{
+        height: 100%;
+    }
+}
+
+
+/* ***************************** */
+/* ----------------------------- */
+/* ***************************** */
 
 
 
@@ -290,17 +316,16 @@
         height: 3rem;
     }
 
-    header{
-        width: 100%;
-    }
+   
      
 
     #theme-opener{
-        top: -70px;
+        position: absolute;
         height: 3rem;
-        right: -100%;
-        position: relative;
-    }
+        top: 10px;        
+        left: 85%;
+        
+    }   
 
    
 
@@ -325,53 +350,30 @@
 
 @media (max-width: 390px){
 
-    html{
-        background-size: cover;
-        height: 200%;
-        width: 300px;
+
+    .themes-container{
+        width: 220px;
+        height: 100vh;
     }
-
-    body{
-        width: 100vw;    }
-
-    
-
 
     .content{
         padding: auto 0;
         width: auto;
     }
-
-    
    
 
     #theme-opener{
-        top: -8.5%;
+        top: 10px;
         left: 85%;
-        height: 4rem;
-        position: relative;
-    }
-       
-
-    header{
-        width: 100vw;
-    }
-    
-
-    main{
-        width: 90%;               
-    }
-
-
-
-
+        height: 3rem;
+        position: absolute;
+    }       
 
     .text-area, .msg{
         height: 350px;
         font-size: 2rem;
         width: 250px;
-    }
-    
+    }    
 }
 
 
@@ -383,28 +385,17 @@
 
 @media (max-width: 280px){
 
-    #theme-opener{
-        top: -5%;
-        height: 4rem;
-        left: 80%;
+    header{
+        width: 110vw;
     }
+   
+   
 
     #theme-opener{
         top: 10px;
-        left: 99%;
+        left: 90%;
         height: 3rem;
         position: absolute;
-    }
-
-    header{
-        width: 100%;
-    }
-    
-
-   
-    body{
-        height: auto;
-        width: 100vw;
     }
 
 
