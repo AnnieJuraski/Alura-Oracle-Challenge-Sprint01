@@ -44,6 +44,60 @@
 /* ----------------------------- */
 /* ***************************** */
 
+@media (max-width: 1360px){   
+
+    main{
+        padding: 0 20px;
+    }    
+
+     .content{
+        justify-content: space-between;
+        gap: 10px
+     }
+
+     .msg-container,
+    .txt-container{
+        gap: 50px;
+    }
+
+    .text-area{
+        height: 300px;
+        font-size: 2rem;
+        width: 40vw;      
+    }
+
+    .info{
+        bottom: 70px;
+        font-size: 1.4rem;
+    }
+ 
+     .msg{
+         height: 300px;
+         width: 32vw;
+         font-size: 2rem;
+     }
+     
+     .title{
+        font-size: 2rem;
+     }
+
+
+     button{
+        font-size: 1.6rem;
+        height: 60px;
+        width: 180px;
+        padding: 0px;
+        border-radius: 15px;
+    }
+     
+    
+ }
+ 
+ 
+ /* ***************************** */
+ /* ----------------------------- */
+ /* ***************************** */
+
 
 @media (max-width: 1280px){    
     html{
@@ -73,21 +127,8 @@
         position: absolute;
         height: 4rem;
         top: 20px;
-    }
-
-    .info{
-        bottom: 70px;
-        font-size: 1.4rem;
-    }
-
-
-     button{
-        font-size: 1.6rem;
-        height: 60px;
-        width: 180px;
-        padding: 0px;
-        border-radius: 15px;
-    }
+    }   
+   
 }
 
 
