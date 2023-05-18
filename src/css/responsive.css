@@ -24,12 +24,12 @@
     .text-area{
         height: 500px;
         font-size: 2.5rem;
-        width: 42vw;      
+        width: 800px;      
     }
 
     .msg{
         height: 500px;
-        width: 40vw;
+        width: 750px;
     }
 
     .content {
@@ -44,7 +44,7 @@
 /* ----------------------------- */
 /* ***************************** */
 
-@media (max-width: 1360px){   
+@media (max-width: 1440px){   
 
     main{
         padding: 0 20px;
@@ -63,7 +63,8 @@
     .text-area{
         height: 300px;
         font-size: 2rem;
-        width: 40vw;      
+        width: 520px;   
+        border: 2px    
     }
 
     .info{
@@ -73,7 +74,7 @@
  
      .msg{
          height: 300px;
-         width: 32vw;
+         width: 450px;
          font-size: 2rem;
      }
      
@@ -100,18 +101,12 @@
 
 
 @media (max-width: 1280px){    
-    html{
-        height: auto;
-    }
-
-    body{
-        padding: 0 0 50px 0;
-    }
-
+   
     .text-area, .msg{
-        height: 550px;
+        height: 350px;
         font-size: 2rem;
-        width: 45vw;
+        width: 550px;
+        border: 3px 
     }
 
     .btn-container {
@@ -205,8 +200,9 @@
 
 @media (max-width: 1024px){
 
-   
-
+    html{
+        height: 250vh;
+    }
     
 
     .content {

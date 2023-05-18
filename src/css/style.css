@@ -262,7 +262,7 @@ main {
     box-sizing: border-box;
     background: transparent;
     height: 700px;
-    width: 80vh;
+    width: 1100px;
     font-size: 3rem;
     color: var(--textColor);
     resize: none;
@@ -329,7 +329,7 @@ main {
     border: none;
     box-sizing: border-box;
     height: 700px;
-    width: 35vw;
+    width: 950px;
     padding: 40px;
     resize: none;
     backdrop-filter: blur(20px);
