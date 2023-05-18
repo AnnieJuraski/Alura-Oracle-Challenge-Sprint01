@@ -34,10 +34,8 @@ Link para o projeto: https://anniealves.github.io/Alura-Oracle-Challenge-Sprint0
 
 ![light-theme_green_open-menu](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/358c7ab7-b66b-483b-a7f0-0c1cf6d184b0)
 
-
-
-
-
+<br>
+<br>
 
 <h2>Requisitos</h2>
 <br>
