@@ -34,9 +34,7 @@ Link para o projeto: https://anniealves.github.io/Alura-Oracle-Challenge-Sprint0
 
 ![light-theme_green_open-menu](https://github.com/AnnieAlves/Alura-Oracle-Challenge-Sprint01/assets/122943792/358c7ab7-b66b-483b-a7f0-0c1cf6d184b0)
 
-
-
-
+<br>
 
 
 <h2>Requisitos</h2>
@@ -45,8 +43,8 @@ Link para o projeto: https://anniealves.github.io/Alura-Oracle-Challenge-Sprint0
 * Deve funcionar apenas com letras minúsculas<br>
 * Não devem ser utilizados letras com acentos nem caracteres especiais<br>
 * Deve ser possível converter uma palavra para a versão criptografada e também retornar uma palavra criptografada para a versão original.<br>
-<br>
-Obs.: Como nota pessoal, gostaria de tentar depois uma resolução que permita usar caracteres especiais.
+
+<h5 align="center"> Obs.: Como nota pessoal, gostaria de tentar depois uma resolução que permita usar caracteres especiais. </h5>
 <br>
 <br>
 <br>
