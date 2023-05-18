@@ -388,6 +388,10 @@
     header{
         width: 110vw;
     }
+
+    .info{
+        text-align: center;
+    }
    
    
 
