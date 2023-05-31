@@ -2,7 +2,7 @@
     --blue: #0f3397;
     --green: #006329;
     --red: #ce001b;
-    --purple: #540673;
+    --purple: #5e0983;
     --colorBGGradient: #000000;
     --bgThemeContainer: rgb(8, 8, 8);
     --textColor: #f0f0f0;
@@ -13,6 +13,7 @@
     --mainColor: var(--blue);
     --msgBGImage: url(/src/img/encrypt_lock3.png);
     --bgSize: 600%;
+
 }
 
 
@@ -25,7 +26,6 @@
     --bgMSG: #cecece;
     --border: 1px solid rgba(0, 0, 0, .3);
     --bgSize: 200%;
-    
 }
 
 
@@ -63,7 +63,7 @@ header {
     margin-bottom: 30px;
     height: 80px;
     background-color: var(--mainColor);
-    background: linear-gradient(to top, var(--mainColor) 0%, rgb(8, 8, 8) 100%);
+    background: linear-gradient(to bottom, var(--mainColor) 0%, rgb(8, 8, 8) 100%);
     box-shadow: 0 5px 25px black;
     width: 100vw;
 
@@ -414,7 +414,3 @@ button:active {
     background-color: transparent;
     border: 4px solid var(--mainColor);
 }
-
-
-/* ********* Mesage ********** */
-
