@@ -13,8 +13,6 @@
     --mainColor: var(--blue);
     --msgBGImage: url(/src/img/encrypt_lock3.png);
     --bgSize: 600%;
-    
-
 }
 
 
@@ -65,7 +63,7 @@ header {
     margin-bottom: 30px;
     height: 80px;
     background-color: var(--mainColor);
-    /* background: linear-gradient(to bottom, var(--mainColor) 0%, rgb(8, 8, 8) 100%); */
+    background: linear-gradient(to top, var(--mainColor) 0%, rgb(8, 8, 8) 100%);
     box-shadow: 0 5px 25px black;
     width: 100vw;
 
@@ -416,3 +414,7 @@ button:active {
     background-color: transparent;
     border: 4px solid var(--mainColor);
 }
+
+
+/* ********* Mesage ********** */
+
