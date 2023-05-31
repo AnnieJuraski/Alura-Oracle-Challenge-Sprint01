@@ -1,5 +1,5 @@
 const themeOpen = document.getElementById('theme-opener');
-const themeClose = document.getElementById('theme-closer')
+const themeClose = document.getElementById('theme-closer');
 const body = document.querySelector('body');
 const themeMenu = document.querySelector('.themes-container');
 const toggler = document.querySelector('.toggler');
