@@ -41,6 +41,7 @@ encryptButton.addEventListener('click', function () {
       message.style.backgroundImage = 'none';
       message.value = encryptedMSG;
       textArea.value = "";
+      showFeedBackMSG('Texto Criptografado!');
     } else {
       showErrorMessage();
     }
@@ -49,7 +50,7 @@ encryptButton.addEventListener('click', function () {
 
 
 function checkCharacters(string) {
-  return /^[a-zA-Z \n]+$/.test(string);
+  return /^[a-zA-Z, \n]+$/.test(string);
 }
 
 
@@ -59,7 +60,7 @@ function encrypt(text) {
   let encryptedMessage = '';
 
   for (let i = 0; i < text.length; i++) {
-    //the line below searches inside the array "alphabet" for the value of text[i]. So if the text starts with "d", i.e. index 0 of text, the index of alhabet will be 3.
+    //the line below take reference of the character at index i in the text, then check where is it in the alphabet array and hold it in "indexCypher". If it is found it assigns the value of same index inside "cypher" array to build the encrypted message
     const indexCypher = alphabet.indexOf(text[i]);
 
     if (indexCypher != -1) {
@@ -67,7 +68,7 @@ function encrypt(text) {
     } else {
       encryptedMessage += text[i];
     }
-  }
+  }  
   return encryptedMessage;
 }
 
@@ -90,6 +91,7 @@ decryptButton.addEventListener('click', () => {
       message.style.backgroundImage = 'none';
       message.value = decyptedMSG;
       textArea.value = "";
+      showFeedBackMSG('Texto Descriptografado!');
     }
     else{
       showErrorMessage();
@@ -115,8 +117,8 @@ function decrypt(encryptedMessage) {
     if (!found) {
       decryptedMessage += encryptedMessage[i];
     }
-  }
-  return decryptedMessage;
+  }  
+  return decryptedMessage;  
 }
 
 //Copy button
@@ -126,15 +128,27 @@ copyButton.addEventListener('click', () => {
   message.select();
   message.setSelectionRange(0, 99999);
   navigator.clipboard.writeText(message.value);
-  alert('Texto copiado!');
+  showFeedBackMSG('Texto Copiado!');
 
 })
 
 //Error case
 
 function showErrorMessage() {
-  alert('Insira apenas letras sem acentos, sem números ou caracteres especiais');
+  showFeedBackMSG('Insira apenas letras sem acentos, sem números ou caracteres especiais');
   textArea.value = '';
   message.value = '';
   message.style.setProperty('background-image', 'var(--msgBGImage)');
+}
+
+
+function showFeedBackMSG(text){
+  let feedBack = document.getElementById('feedbackMSG')
+
+  feedBack.innerText = text;
+  feedBack.classList.add('active')
+
+  setTimeout(()=>{
+    feedBack.classList.remove('active');
+  }, 2000);
 }
