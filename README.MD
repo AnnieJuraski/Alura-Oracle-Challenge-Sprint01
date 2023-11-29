@@ -6,7 +6,7 @@ Esse projeto é minha resolução do desafio Sprint 01 da Alura, dentro do progr
 O desafio consistia em criar um codificador e decodificador de texto usando Javascript usando também HTML e CSS para estruturação e estilização. 
 <br>
 <br>
-Link para o projeto: https://anniealves.github.io/Alura-Oracle-Challenge-Sprint01/
+Link para o projeto: https://https://anniejuraski.github.io/Alura-Oracle-Challenge-Sprint01/
 <br>
 <br>
 
